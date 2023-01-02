@@ -1,0 +1,26 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("GT HUB PRISON LIFE", "Synapse")
+
+--Tabs
+local Tab1 = Window:NewTab("Admin scripts")
+local Tab2 = Window:NewTab("FE and fling scripts")
+
+--Sections inside tab
+local Section = Tab:NewSection("Admin scripts")
+
+--Buttons
+Tab1Section:NewButton("Infinite yeild", "An FE admin script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab1Section:NewButton("Septex admin", "A admin script specially made for Prison life", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+--Tab2
+Tab2Section:NewButton(FE server admin", "The FE version of Server admin controls will be at bottom right", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
+Tab2Section:NewButton("FE Human car", "This is a reanimation this turns your legs and arms to function like a car and if you hit someone they will go yeet", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HflixDev/FE-human-car/main/Fe%20script"))()
+end)
